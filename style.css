@@ -70,7 +70,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 30px; /* Ajusta el espacio entre la imagen y la sección de bookmarks */
 }
 
 .bookmarks {
