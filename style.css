@@ -72,8 +72,8 @@ body {
 }
 
 .bookmarks {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Cambio: Mostrar 2 columnas */
   justify-content: center;
   gap: 10px;
 }
