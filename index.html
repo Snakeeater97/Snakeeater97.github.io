@@ -34,6 +34,9 @@
         .bookmarks {
             flex-grow: 1;
             overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Mostrar en dos columnas */
+            gap: 20px; /* Espacio entre los elementos */
         }
 
         .weather-container {
@@ -44,6 +47,10 @@
         @media only screen and (max-width: 600px) {
             .head {
                 font-size: 24px;
+            }
+
+            .bookmarks {
+                grid-template-columns: 1fr; /* Volver a una sola columna en dispositivos móviles */
             }
         }
     </style>
