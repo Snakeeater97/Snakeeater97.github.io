@@ -140,6 +140,6 @@ a:hover {
 .head img {
   border: 5px solid #F5C2E7;
   border-radius: 5%;
-  margin-bottom: 10px; /* Ajusta el espacio entre la imagen y la sección de bookmarks */
+  margin-bottom: 30px; /* Ajusta el espacio entre la imagen y la sección de bookmarks */
 }
 
