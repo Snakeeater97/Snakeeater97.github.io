@@ -7,14 +7,23 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Start</title>
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlace al archivo CSS -->
+    <script>
+        function changeImage() {
+            var images = ["citypop.gif", "clouds.gif", "cat.gif", "waves.gif", "rest.webp", "guts.png"];
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var img = document.querySelector(".head img");
+            img.src = images[randomIndex];
+        }
+        window.onload = changeImage;
+    </script>
 </head>
 
 <body>
     <div class="container">
         <div class="right-container">
             <div class="head">
-                <img src="guts.png" alt="nya"> <!-- Reemplaza "ruta_de_la_imagen.jpg" con la ruta de tu imagen -->
-            </div>
+                <img src="citypop.gif" alt="nya" width="265px" height="200px"> <!-- Reemplaza "ruta_de_la_imagen.jpg" con la ruta de tu imagen -->
+            </div>>
             <div class="bookmarks">
                 <div class="category">
                     <div class="links">
