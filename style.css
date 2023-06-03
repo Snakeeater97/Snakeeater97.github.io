@@ -62,7 +62,8 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 30px;
-  padding-top: 40px;
+  padding-top: 20px; /* Ajusta el espacio superior de la sección */
+  margin-bottom: 10px; /* Agrega un espacio entre la imagen y la sección de bookmarks */
 }
 
 .category {
@@ -138,7 +139,7 @@ a:hover {
 }
 .head img {
   border: 5px solid #F5C2E7;
-  border-radius: 3%;
+  border-radius: 5%;
+  margin-bottom: 10px; /* Ajusta el espacio entre la imagen y la sección de bookmarks */
 }
-
 
