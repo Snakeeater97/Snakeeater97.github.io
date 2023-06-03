@@ -4,6 +4,14 @@ body {
     padding: 0;
 }
 
+:root {
+    --color-bg: #1E1E2E;
+    --color-fg: #D9E0EE;
+    --color-link: #F5C2E7;
+    --color-link-visited: #F5C2E7;
+    --color-link-hover: #FF79C6 ;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -21,6 +29,7 @@ body {
 .head {
     padding: 20px;
     font-size: 30px;
+    color: var(--color-fg); /* Color del texto */
 }
 
 .bookmarks {
@@ -46,6 +55,7 @@ body {
 
 .title {
     font-size: 20px; /* Reducir el tamaño de la fuente del título */
+    color: var(--color-link); /* Color del título */
 }
 
 li {
@@ -54,8 +64,22 @@ li {
     padding: 5px;
 }
 
+a:link {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:visited {
+    color: var(--color-link-visited);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
 .weather-container {
     padding: 10px;
+    color: var(--color-fg); /* Color del texto */
 }
 
 /* Estilos para dispositivos móviles */
