@@ -85,21 +85,7 @@
 
             <div class="weather-container">
                 <script>
-                    window.addEventListener('load', () => {
-                        const url =
-                            'https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,AR&units=metric&appid=4d350b25a8b7f6ca376e4fb0a95cb5b8';
-                        fetch(url)
-                            .then(response => response.json())
-                            .then(data => {
-                                const temp = data.main.temp.toFixed(1);
-                                const weather = data.weather[0].description;
-                                const weatherText = `   Current weather: ${weather}, ${temp}°C`;
-                                const weatherElement = document.createElement('p');
-                                weatherElement.textContent = weatherText;
-                                document.querySelector('.weather-container').appendChild(weatherElement);
-                            })
-                            .catch(error => console.error(error));
-                    });
+                    window.addEventListener("load",()=>{fetch("https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,AR&units=metric&appid=4d350b25a8b7f6ca376e4fb0a95cb5b8").then(e=>e.json()).then(e=>{let t=e.main.temp.toFixed(1),a=e.weather[0].description,r=`   Current weather: ${a}, ${t}\xb0C`,n=document.createElement("p");n.textContent=r,document.querySelector(".weather-container").appendChild(n)}).catch(e=>console.error(e))});
                 </script>
             </div>
         </div>
