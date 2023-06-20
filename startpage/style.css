@@ -87,7 +87,7 @@ flex-direction: column;
 align-items: center;
 padding-top: 1px;
 padding-bottom: 20px;
-font-size: 16px; /* Aumenta el tamaño de la fuente de los links */
+font-size: 20px; /* Aumenta el tamaño de la fuente de los links */
 }
 
 .title {
