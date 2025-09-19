@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Munsita !!☆ — Linktree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuente redondeada y cute -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <!-- Font Awesome para iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Fredoka One', sans-serif;
+      /* Fondo pastel animado */
+      background: linear-gradient(135deg, #FFE4E1, #FFF0F5, #E0FFFF);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      border: 3px solid #FFD1DC;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #FF69B4;
+    }
+
+    .bio {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #A66BBE;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 16px;
+      font-size: 1.1rem;
+      color: white;
+      background: linear-gradient(135deg, #FFA07A, #FFB6C1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .links a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #FFB6C1, #FFA07A);
+    }
+
+    .links a i {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 500px) {
+      .profile-pic { width: 120px; height: 120px; }
+      .name { font-size: 1.6rem; }
+      .links a { font-size: 1rem; padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-pic">
+      <img src="profilepic.jpg" alt="Munsita !!☆">
+    </div>
+    <div class="name">Munsita !!☆</div>
+    <div class="bio">Digital Artist — Illustrator • Argentina 🇦🇷 </div>
+
+    <div class="links">
+      <a href="https://instagram.com/munsitamatsu" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@munsitamatsu" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+      <a href="https://discord.gg/tuServidor" target="_blank">
+        <i class="fab fa-discord"></i> Discord
+      </a>
+      <a href="https://munsitamatsu.tienda" target="_blank">
+        <i class="fas fa-shopping-bag"></i> Tienda
+      </a>
+    </div>
+  </div>
+</body>
+</html>
